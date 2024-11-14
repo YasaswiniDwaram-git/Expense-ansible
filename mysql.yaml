@@ -2,7 +2,7 @@
   hosts: mysql
   become: yes
   tasks:
-   - name: install MySQL server
-     ansible.buitlin.package:
+  - name: install MySQL server
+    ansible.buitlin.package:
       name: mysql-server
       state: present
