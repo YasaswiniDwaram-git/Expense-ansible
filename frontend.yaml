@@ -8,7 +8,7 @@
       state: present
 
   - name: start nginx
-    ansbile.builtin.service:
+    ansible.builtin.service:
       name: nginx
       state: started
       enabled: yes
@@ -17,7 +17,7 @@
     ansible.builtin.file:
       path: /usr/share/nginx/html
       state: absent
-      
+
   - name: create html directory
     ansible.builtin.file:
       path: /usr/share/nginx/html
