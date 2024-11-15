@@ -29,8 +29,8 @@
 
   - name: extract file
     ansible.builtin.unarchive:
-      src: /tmp/backend.zip
+      src: /tmp/backend.zip #bydefault ansible thn=inks this is present in ansible server and we want it to move it to remote server
       dest: /app
-
+      remote_src: yes
 
     
