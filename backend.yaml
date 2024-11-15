@@ -12,7 +12,6 @@
     ansible.builtin.package:
       name: nodejs
       state: present
-      enabled: yes
 
   - name: create expense user
     ansible.builtin.user:
