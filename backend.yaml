@@ -65,8 +65,8 @@
       name: all
       target: /app/schema/backend.sql
 
-  # - name: Restart service cron on centos
-  #   ansible.builtin.systemd_service:
-  #     daemon_reload: true
-  #     state: restarted
-  #     name: backend
+  - name: Restart backend service
+    ansible.builtin.systemd_service:
+      daemon_reload: true
+      state: restarted
+      name: backend
